@@ -7,12 +7,12 @@
 }
 
 body {
-   background-color: blueviolet;
+   background-color: rgb(48, 31, 65);
 
 }
 
 main {
-   background-color: white;
+   background-color: rgb(156, 182, 192);
    width: 500px;
    margin: auto;
    padding: 10px;
