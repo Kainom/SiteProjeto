@@ -26,6 +26,7 @@ body {
   background-color: #000723;
 }
 
+
 /*Layout*/
 .Container {
   margin: 0 auto;
@@ -72,15 +73,14 @@ body {
   margin-top: 25px;
   width: 338px;
   height: 520px;
-  background-color: blueviolet;
-  border: 11px double #6ecbf5;
+  background-color: #2d2c30;
+  border: 11px double #ff901b;
   border-radius: 25px;
   text-align: center;
 }
 
-
 .Card img {
-  border-radius:5%;
+  border-radius: 5%;
 }
 
 .Card h3 {
@@ -100,7 +100,7 @@ body {
 }
 #conteudo {
   padding: 50px 0px;
-  background-image: url(img/citypunk.jpg);
+  background-color: #202324;
 }
 
 #conteudo h2 {
@@ -113,11 +113,10 @@ body {
 }
 
 #iconeMapa {
- border-radius: 50%;
- width: 60px;
- height: 60px;
-}   
-
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
 
 #logo img {
   position: static;
@@ -132,7 +131,7 @@ body {
   position: static;
   float: left;
   margin-top: 20px;
-  color: #00eade;
+  color: #ff901b;
   font-weight: 800;
   font-size: 1em;
 }
@@ -173,13 +172,20 @@ body {
 
 .Botao {
   text-decoration: none;
-  color: #ff0677;
   font-size: 1.3em;
   font-weight: 700;
-  background-color: #6ecbf5;
-  padding: 10px 40px;
-  border: 2px solid #ff0677;
   border-radius: 25px;
+  color: #ff901b;
+  background-color: #2d2c30;
+  border: 5px double brown;
+  padding: 10px 20px;
+}
+
+.Botao:hover{
+  transition-duration: 0.5s;
+  opacity: 2;
+  background-color: #ff901b;
+  color: #2d2c30;
 }
 
 /*topo do site */
@@ -198,12 +204,12 @@ label {
   float: right;
   padding-left: 115px;
   font-size: 3em;
-  color: rgba(3, 253, 241, 0.5);
+  color:#ff901b
 }
 
 nav ul {
   list-style: none;
-  background-color: cyan;
+  background-color:#2d2c30;
   height: 100vh;
   position: fixed;
   top: 60px;
@@ -218,30 +224,29 @@ nav ul {
 
 nav ul li {
   padding: 20px;
-  border-bottom: 3px solid #ff0677;
-  border-left: 3px solid #ff0677;
-  border-right: 3px solid #ff0677;
+  border-bottom: 3px double #ff901b;
+  border-left: 3px double #ff901b;
+  border-right: 3px double #ff901b;
 }
-nav ul .inici {
-  border-top: 3px solid #ff0677;
+nav ul #inici{
+  border-top: 3px double #ff901b;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: black;
+  color: #ff901b;
 }
 
 header {
-  background: url("img/fundo3.jpg");
-  background-position: bottom;
-  background-size: cover;
+  background-color: #202324;
+
   height: 75vh;
   height: 60px;
 }
 
 main {
   height: 75vh;
-  background: url(img/what.jpg);
+  background-image: url(img/jovem.jpg);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -251,9 +256,7 @@ main {
   text-align: center;
 }
 
-main a {
-  color: #ff0677;
-}
+
 
 main h1 {
   font-size: 2.5em;
@@ -265,7 +268,7 @@ main h2 {
 }
 
 #sobre {
-  background: url(img/funto.jpg);
+  background: url(img/background.png);
   background-size: cover;
   background-position: center;
 }
@@ -309,7 +312,7 @@ main h2 {
 #video video {
   width: 340px;
   height: 191px;
-  border: #ff0677 5px solid;
+  border: #ff901b 5px double;
 }
 
 #textoSite {
@@ -324,7 +327,7 @@ main h2 {
 }
 
 #onepage {
-  background-image: url(img/ponk.jpg);
+  background-color: #202324;
   background-position: center;
   padding: 50px 10px;
 }
@@ -340,7 +343,7 @@ main h2 {
 }
 
 #roadmap {
-  background-image: url(img/funto.jpg);
+  background-image: url(img/background.png);
   background-size: cover;
   background-position: center;
   padding: 50px 0px;
@@ -369,7 +372,7 @@ p {
 }
 address {
   padding: 35px 10px 50px 10px;
-  background-image: url(img/funto.jpg);
+  background-image: url(img/background.png);
   background-size: cover;
   background-position: center;
 }
@@ -391,7 +394,7 @@ address img {
 }
 footer {
   padding: 35px;
-  background-image: url(img/fundo3.jpg);
+  background-color: #202324;
   background-size: cover;
   background-position: bottom;
   height: 60px;
@@ -412,24 +415,22 @@ footer img {
     padding-left: 60px;
     position: fixed;
   }
-
-  
 }
 @media (min-width: 360px) {
   label {
     padding-left: 100px;
   }
-  .Card{
+  .Card {
     width: 320px;
     height: 520px;
   }
-  .Card img{
+  .Card img {
     width: 320px;
   }
 
-  #video video{
-      width: 330px;
-      height: 185px;
+  #video video {
+    width: 330px;
+    height: 185px;
   }
 }
 @media (min-width: 390px) {
@@ -586,7 +587,6 @@ footer img {
     position: static;
     float: left;
     margin-top: 40px;
-    color: #00eade;
     font-weight: 800;
     font-size: 1.5em;
   }
@@ -608,7 +608,7 @@ footer img {
   }
 
   nav ul {
-    position: w;
+    position: static;
     height: auto;
     width: 100%;
     background-color: transparent;
@@ -616,25 +616,28 @@ footer img {
 
   nav ul li {
     float: right;
-    border-top: 3px solid #6ecbf5;
-    border-left: 3px solid #6ecbf5;
-    border-bottom: 3px solid #6ecbf5;
-    border-right: 3px solid#6ecbf5;
+    border-top: 3px double #ff901b;
+    border-left: 3px double #ff901b;
+    border-bottom: 3px double #ff901b;
+    border-right: 3px double #ff901b;
     margin-top: 30px;
     margin-right: 20px;
     border-radius: 25px;
   }
   nav ul .inici {
-    border-top: 3px solid #6ecbf5;
+    border-top: 3px double #ff901b;
   }
 
   nav ul li a {
-    color: #00eade;
+    color: brown;
     text-shadow: #000723 0.5em 0.5em 0.5em;
+    text-transform: uppercase;
+    transition: color 1s cubic-bezier(0.06, 0.81, 0, 0.98),
+      border-color 0.5s cubic-bezier(0.06, 0.81, 0, 0.98);
   }
 
   nav ul li a:hover {
-    color: #ff0677;
+    color: #ff901b;
   }
 
   #sobre {
@@ -647,7 +650,7 @@ footer img {
   }
 
   #sobre a p:hover {
-    color: #ff0677;
+    color:black;
   }
   #video {
     padding-left: 10px;
@@ -677,7 +680,7 @@ footer img {
     background-attachment: fixed;
   }
   address a p:hover {
-    color: #ff0677;
+    color: #ff901b;
   }
   #googleMaps {
     display: inline;
