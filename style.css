@@ -163,11 +163,6 @@ body {
   color: #fff;
 }
 
-.TopicoSobre a:hover {
-  text-decoration: none;
-  color: #ff901b;
-}
-
 .TopicoSobre {
   padding-top: 10px;
 }
@@ -229,12 +224,8 @@ nav ul {
 
 nav ul li {
   padding: 20px;
-  border-bottom: 3px solid #ff901b;
-  border-left: 3px double #ff901b;
-  border-right: 3px double #ff901b;
 }
 nav ul #inici{
-  border-top: 3px double #ff901b;
 }
 
 nav ul li a {
@@ -413,6 +404,7 @@ footer img {
   border-radius: 50%;
   width: 4em;
   height: 4em;
+  border: 2px solid #ff901b;
 }
 
 @media (min-width: 320px) {
@@ -621,16 +613,16 @@ footer img {
 
   nav ul li {
     float: right;
-    border-top: 3px double #ff901b;
-    border-left: 3px double #ff901b;
-    border-bottom: 3px double #ff901b;
-    border-right: 3px double #ff901b;
+    border-top: 2px solid #ff901b;
+    border-left: 2px solid #ff901b;
+    border-bottom: 2px solid #ff901b;
+    border-right: 2px solid #ff901b;
     margin-top: 30px;
     margin-right: 20px;
     border-radius: 25px;
   }
   nav ul .inici {
-    border-top: 3px double #ff901b;
+    border-top: 2px solid #ff901b;
   }
 
   nav ul li a {
